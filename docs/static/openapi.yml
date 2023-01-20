@@ -253,6 +253,9 @@ paths:
                       type: string
                     body:
                       type: string
+                    createdAt:
+                      type: string
+                      format: int64
                 title: Returning a list of posts
               pagination:
                 type: object
@@ -45057,6 +45060,12 @@ definitions:
       createdAt:
         type: string
         format: int64
+  blog.blog.MsgCreateCommentResponse:
+    type: object
+    properties:
+      id:
+        type: string
+        format: uint64
   blog.blog.MsgCreatePostResponse:
     type: object
     properties:
@@ -45078,6 +45087,9 @@ definitions:
         type: string
       body:
         type: string
+      createdAt:
+        type: string
+        format: int64
   blog.blog.QueryAllCommentResponse:
     type: object
     properties:
@@ -45172,6 +45184,9 @@ definitions:
               type: string
             body:
               type: string
+            createdAt:
+              type: string
+              format: int64
         title: Returning a list of posts
       pagination:
         type: object
